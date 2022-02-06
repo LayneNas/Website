@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Car Dealership Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="login-sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"> HOME</a></li>
+                    <li><a href=""> ABOUT</a></li>
+                    <li><a href="INVENTORY.html"> INVENTORY</a></li>
+                    <li><a href=""> REVIEWS</a></li>
+                    <li><a href=""> CONTACTS</a></li>
+                </ul>
+            </div>
+            <a href="Login.html" class="login-btn">LOGIN</a>
+        </nav>
+        
+        <div class="form-box">
+            <div class="form-button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group" action="login.php">
+                <input type="text" class="input-field" placeholder=" User Id" required>
+                <input type="text" class="input-field" placeholder=" Enter Password" required>
+                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder=" User Id" required>
+                <input type="email" class="input-field" placeholder=" Enter Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="chech-box"><span> I agree to terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+
+            function register() {
+                x.style.left = "-400px";
+                y.style.left = "10px";
+                z.style.left = "110px";
+
+
+            }
+            function login() {
+                x.style.left = "10px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+
+
+            }
+
+        </script>
+    </section>
+    
+   
+
+</body>
+</html>
